@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
 
 
 function Navbar() {
+  const [filter, setFilter] = useState('');
 
   const runHamburger = () => {
 
     const secondPart = document.querySelector('.second-part');
 
-    secondPart.style.opacity = 1;
+    secondPart.style.left = "0%";
+    secondPart.style.borderTopLeftRadius = '0'
+    secondPart.style.borderBottomLeftRadius = '0'
+
   }
   const closeHamburger = () => {
 
     const secondPart = document.querySelector('.second-part');
 
-    secondPart.style.opacity = 0;
+    secondPart.style.left = "-100%"
   }
 
   return (
@@ -28,7 +32,10 @@ function Navbar() {
             </div>
           </Link>
           <div className="searchbar">
-            <input type="text" className='text' placeholder='Enter Course, Category or Keyword' /><i className='fa fa-search'></i>
+            <input type="text"
+             className='text'
+             placeholder='Enter Course, Category or Keyword'
+             value={filter} /><i className='fa fa-search'></i>
           </div>
         </div>
         <div className="right-side">

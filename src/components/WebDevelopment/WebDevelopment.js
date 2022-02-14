@@ -1,42 +1,50 @@
-import React from 'react';
-import mern from '../../images/mern.jpg'
-import mean from '../../images/mean.jpg'
-import lamp from '../../images/lamp.jpg'
+import React, { useState } from 'react';
+import Web from '../Data/Web.js'
 
 function WebDevelopment() {
+  const [filter, setFilter] = useState('');
+
+  const searchText = (e) => {
+    setFilter(e.target.value);
+  }
+
+
+  let datasearch = Web.filter(item => {
+    return Object.keys(item).some(key => 
+         item[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
+      )
+  })
+
+
   return <>
+
     <section className='web-1'>
       <div className="web-heading">
         <h3>Web Development <br />Certification Courses</h3>
+
       </div>
     </section>
     <div className="section-5">
       <h3>Web Development BestSeller Courses</h3>
-      <div className="flex">
-        <div className="mern-image">
-          <img src={mern} alt="" />
-          <div className="titles">MERN Stack</div>
-        </div>
-        <div className="mern-image">
-          <img src={mean} alt="" />
-          <div className="titles">MEAN Stack</div>
-        </div>
-        <div className="mern-image">
-          <img src={lamp} alt="" />
-          <div className="titles">LAMP Stack</div>
-        </div>
-        <div className="mern-image">
-          <img src={mern} alt="" />
-          <div className="titles">MERN Stack</div>
-        </div>
-        <div className="mern-image">
-          <img src={mern} alt="" />
-          <div className="titles">MERN Stack</div>
-        </div>
-        <div className="mern-image">
-          <img src={mern} alt="" />
-          <div className="titles">MERN Stack</div>
-        </div>
+      <div className="searchbar">
+        <input type="text"
+          className='text'
+          placeholder='Enter Course, Category or Keyword'
+          value={filter}
+          onChange={searchText.bind(this)}
+        /><i className='fa fa-search'></i>
+      </div>
+      <div className="courses">
+        {datasearch.map((coursesData, index) => {
+          return (
+            <div className="courses_card">
+              <div className="course_name">{coursesData.name}</div>
+              <div className="courses_img">
+                <img src={coursesData.img} alt="" />
+              </div>
+            </div>
+          );
+        })}
       </div>
       <div className="third-heading">
         <h1>LOAD MORE COURSES</h1>

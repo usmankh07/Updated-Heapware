@@ -17,7 +17,7 @@ function AboutUs4() {
             </p>
           </div>
         </div>
-        <div className="aboutus4_image">
+        <div className="aboutus3_image">
           <img src={aboutus4} alt="" />
         </div>
       </div>

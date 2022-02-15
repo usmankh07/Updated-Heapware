@@ -25,10 +25,10 @@ function Team3() {
 </div>
                   </div>
                   <img src={coursesData.img} alt="" />
-                </div>
-                <div className="face_description">
+                
                     <h5>{coursesData.name}</h5>
                     <h6>{coursesData.job}</h6>
+              
                 </div>
               </div>
                 

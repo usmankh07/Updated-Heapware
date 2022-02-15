@@ -2568,7 +2568,7 @@ article.lastSlide{
     }
 
     .section-1 {
-        height: 81vh;
+        height: auto;
     }
 
     .section1-heading ul {
@@ -2716,7 +2716,7 @@ article.lastSlide{
       ul.link_padding {
         display: flex;
         flex-direction: column;
-        height: 54vh;
+        height: 89vh;
         align-items: flex-start;
         color: black;
     }

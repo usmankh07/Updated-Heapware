@@ -18,9 +18,9 @@ function Team3() {
                   <div className="face_screen">
                   <div className="hover_icons">
 
-<i class="fab fa-facebook"></i>
-<i class="fab fa-instagram"></i>
-<i class="fab fa-linkedin"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
 
 </div>
                   </div>

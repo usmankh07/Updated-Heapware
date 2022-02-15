@@ -52,7 +52,7 @@ function FullStackDevelopment() {
         </div>
         <div className="card1">
           <p>
-            Get practical experience in <br />building a real-world <br />product from scratch
+            Get practical experience by <br />building a real-world <br />product from scratch
           </p>
         </div>
       </div>
@@ -110,7 +110,6 @@ function FullStackDevelopment() {
         </div>
       </div>
     </section>
-    {/* Footer Code */}
   </>;
 }
 

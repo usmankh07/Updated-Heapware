@@ -26,13 +26,13 @@ function WebDevelopment() {
     </section>
     <div className="section-5">
       <h3>Web Development BestSeller Courses</h3>
-      <div className="searchbar">
+      <div className="webSearch">
         <input type="text"
-          className='text'
+          className='webInput'
           placeholder='Enter Course, Category or Keyword'
           value={filter}
           onChange={searchText.bind(this)}
-        /><i className='fa fa-search'></i>
+        /><i className='fa fa-search searchWeb'></i>
       </div>
       <div className="courses">
         {datasearch.map((coursesData, index) => {

@@ -35,7 +35,7 @@ a {
 .courses {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     /* height: 70vh; */
@@ -43,21 +43,15 @@ a {
 }
 
 .courses_card {
-    margin: 40px 10px;
+    margin: 40px 50px;
     position: relative;
-    /* background-color: red; */
-    /* height: auto; */
     box-shadow: 4px 4px 10px #d4d4d4;
-    width: 30%;
-    height: 200px;
-
-    /* border-radius: 20px; */
+    max-width: 488px;
+    /* height: 500px; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    box-shadow: 1px 2px 3px grey;
+    /* box-shadow: 1px 2px 3px grey; */
 
 }
 
@@ -294,6 +288,23 @@ section .first-part {
 .three-lines i {
     color: white;
     font-size: 30px;
+}
+.webSearch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.webInput {
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 5px 5px;
+}
+.dropdown {
+    height: 200px;
+    z-index: 999;
+    background-color: red;
+    width: 100%;
 }
 
 
@@ -760,7 +771,8 @@ article img {
 
 .first-parargraph {
     text-align: center;
-    margin: 20px 30px;
+    margin: auto;
+    width: 60%;
 
     /* width: 54%; */
 
@@ -769,7 +781,7 @@ article img {
 
 .first-parargraph p {
     color: rgb(80, 80, 80);
-    font-size: 16px;
+    font-size: 19px;
 }
 
 /* About Component CSS Ends */
@@ -1282,7 +1294,7 @@ footer {
 
 .contact_content p {
     color: white;
-    text-align: center;
+    text-align: center; 
 }
 
 .contact_content button {
@@ -1559,12 +1571,12 @@ textarea {
     height: 100%;
     border-radius:  50%;
 }
-.face_pictures:hover .face_screen, .face_overlay {
-    opacity: 0.5;
+.face_pictures:hover .face_screen {
+    opacity: 1;
     cursor: pointer;
 }
-.face_pictures:hover     .face_overlay {
-    opacity: 0.5;
+.face_pictures:hover .face_overlay {
+    opacity: 1;
     cursor: pointer;
 }
 .face_overlay {
@@ -1576,12 +1588,12 @@ textarea {
 .face_screen {
     width: 380px;
     height: 348px;
-    border-radius:  50%;
+    border-radius:  50%;        
     position: absolute;
     /* bottom: -10%; */
     opacity: 0;
     transition: ease 0.4s;
-    background: black;
+    background: rgba(0, 0, 0, 0.377);
 }
 .face_text {
     display: flex;
@@ -1593,6 +1605,7 @@ textarea {
     /* width: 100%; */
     margin-top: 50px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 
 }
@@ -1894,7 +1907,7 @@ textarea {
         justify-content: space-around;
         /* flex-direction: row; */
         width: 100%;
-        height: auto;
+        height: 17vh;
 
     }
 
@@ -2206,363 +2219,7 @@ article.lastSlide {
     }
 }
 
-@media screen and (max-width: 425px) {
-    .footer-content {
-        display: flex;
 
-        padding: 20px 15px;
-        width: 100%;
-        align-items: space-around;
-        flex-direction: column;
-    }
-
-    .newsletter_searchbox input:first-child {
-
-        width: 245px;
-    }
-
-    .paragraph p {
-        color: rgb(180, 180, 180);
-        font-size: 22px;
-        padding-top: 20px;
-    }
-
-    .footerpoints-1, .footerpoints-2, .footerpoints-3 {
-        margin: 10px 0;
-    }
-
-    .footerpoints-1 ul li h5, .footerpoints-2 ul li h5, .footerpoints-3 ul li h5 {
-        font-size: 26px;
-        font-weight: 900;
-    }
-
-    .footerpoints-1 ul li, .footerpoints-2 ul li, .footerpoints-3 ul li {
-        font-size: 20px;
-        color: rgb(180, 180, 180);
-    }
-
-    .imageofteam {
-        width: 384px;
-        height: 216px;
-    }
-
-    .courses_card {
-        width: 301px;
-        height: 165px;
-    }
-
-    .team_firstpart h2 {
-        font-size: 38px;
-    }
-
-    .contact2_portions {
-        flex-direction: column;
-    }
-
-    .paragraph p {
-        display: flex;
-    }
-
-    .three_portion {
-        width: 100%;
-    }
-
-    .contact2_form {
-        width: 94%;
-        margin: 15px;
-    }
-
-    .second-part ul ul {
-        padding-top: 30px;
-    }
-
-    .second-part ul ul li a {
-        font-size: 20px;
-    }
-
-    .card {
-        padding: 10px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 2px 2px 4px #c3c3c3;
-        width: 76%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    .first-item, .second-item, .third-item {
-        width: 83.3%;
-        background: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        align-items: space-between;
-        padding: 16px 20px;
-        border-radius: 20px;
-        margin: 23px;
-        box-shadow: 2px 2px 12px rgb(17 13 13);
-        /* align-items: center; */
-    }
-
-    .section-3 {
-        margin-top: 55px;
-        padding: 0 20px;
-        text-align: center;
-        margin-bottom: 50px;
-        /* display: flex; */
-    }
-
-    .university-images {
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .image {
-        margin: 10px;
-        width: 162px;
-        height: 162px;
-        /* border: 15px solid rgb(240, 240, 240); */
-        padding: 19px;
-        border-radius: 20px;
-    }
-
-    .third-heading button {
-        margin: 0 auto;
-        background-color: #223378;
-        color: white;
-        text-align: center;
-        padding: 10px 10px;
-        font-size: 20px;
-        border-radius: 15px;
-        font-weight: 600;
-        width: 53%;
-        margin-bottom: 10px;
-    }
-
-
-
-    .card {
-        margin: 10px;
-        width: 78%;
-    }
-
-    .slide {
-        height: 68vh;
-
-    }
-
-    .scroll-portion {
-        position: absolute;
-        top: 54px;
-        left: 21%;
-    }
-
-    .slide img {
-        /* height: 230px; */
-        border-radius: 0px;
-    }
-
-    .section-1 {
-
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        height: 123vh;
-    }
-
-    .section--3-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .section1-image-parent {
-        width: 267px;
-        height: 229px;
-        margin: auto;
-    }
-
-    .card1 {
-        width: 86%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 5px;
-        height: 120px;
-        box-shadow: 2px 2px 10px rgb(143 143 143);
-    }
-
-    .left-side {
-        display: flex;
-        justify-content: flex-start;
-        width: 102%;
-    }
-
-    .searchbar {
-        /* line-height: 4.0; */
-        margin-top: 15px;
-        display: flex;
-        margin-left: 0px;
-    }
-
-    nav {
-        display: flex;
-        position: relative;
-        width: 100%;
-        height: 64px;
-        background-color: #3048aa;
-        padding: 0 8px;
-    }
-
-    .first-item {
-        width: 77.3%;
-        background: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 34px 20px;
-        border-radius: 20px;
-        align-items: CENTER;
-        box-shadow: 2px 2px 12px #c3c3c3;
-    }
-
-    .second-item {
-        width: 77.3%;
-        background: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 34px 20px;
-        border-radius: 20px;
-        align-items: CENTER;
-        box-shadow: 2px 2px 12px #c3c3c3;
-    }
-
-    .third-item {
-        width: 77.3%;
-        background: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 34px 20px;
-        border-radius: 20px;
-        align-items: CENTER;
-        box-shadow: 2px 2px 12px #c3c3c3;
-    }
-
-    .section-3 {
-        margin-top: -21px;
-    }
-
-    .image {
-        width: 161px;
-        height: 155px;
-    }
-
-    .card {
-        padding: 10px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 2px 2px 4px #c3c3c3;
-        width: 74%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    .picture {
-        width: 150px;
-        height: 150px;
-    }
-
-    .card {
-        padding: 10px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 2px 2px 4px #c3c3c3;
-        width: 71%;
-    }
-
-    .picture {
-        width: 150px;
-        height: 150px;
-    }
-
-    .section-1 {
-
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        height: 123vh;
-    }
-
-    .section--3-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .section1-image-parent {
-        width: 267px;
-        height: 229px;
-        margin: auto;
-    }
-
-    .card1 {
-        width: 86%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 5px;
-        height: 120px;
-        box-shadow: 2px 2px 10px rgb(143 143 143);
-    }
-
-    .left-side {
-        display: flex;
-        justify-content: flex-start;
-        width: 102%;
-    }
-
-    .searchbar {
-        /* line-height: 4.0; */
-        margin-top: 15px;
-        display: flex;
-        margin-left: 0px;
-    }
-
-    nav {
-        display: flex;
-        position: relative;
-        width: 100%;
-        height: 64px;
-        background-color: #3048aa;
-        padding: 0 8px;
-    }
-
-    .searchbar {
-        display: none;
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-
-    .title-ends {
-        font-weight: 900;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .right {
@@ -2867,8 +2524,8 @@ article.lastSlide {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 59vh;
-        bottom: -166px;
+        height: 77vh;
+        bottom: -70px;
     }
 
     /* .section-3 {
@@ -2879,6 +2536,7 @@ article.lastSlide {
         display: flex;
         flex-direction: row;
         padding: 30px 10px;
+        margin: 10px 0px;
 
     }
 
@@ -3043,27 +2701,476 @@ article.lastSlide {
     cursor: pointer;
 
 }
-@media screen and (max-width: 2116px) {
-    .items {
-        height: 41vh;
-    }
-    .face {
-        width: 33%;
-    }
-    .face .face_text h4 {
-        font-family: 'Poppins';
-        font-size: 25px;
-        text-align: center;
-    }
-    .face .face_text h6 {
-        font-size: 35px;
-        color: grey;
-    }
-    
-}
+
 @media screen and (max-width: 1600px) {
     .face {
         width: auto;
     }
     
+    
+}
+@media screen and (max-width: 1800px) {
+    .courses_card {
+        max-width: 333px;
+        max-height: 200px;
+        margin: 32px 18px;
+    }
+}
+@media screen and (max-width: 1362px) {
+    .courses_card {
+        max-width: 340px;
+        margin: 40px 5px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .image {
+
+        width: 97px;
+        height: 97px;
+    }
+    .slidercard img {
+        width: 71px;
+        height: 100px;
+        
+    }
+    .footerpoints-1 ul li {
+        font-size: 18px;
+    }
+    .footerpoints-2 ul li {
+        font-size: 18px;
+    }
+    .footerpoints-3 ul li {
+        font-size: 18px;
+    }
+    .course_name {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .courses_img img {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .section-4 {
+        margin: 0 14px;
+    }
+    .section-3 {
+        padding: 0 0px;
+    }
+    .first-parargraph {
+        text-align: left;
+        margin: auto;
+        width: 90%;
+    
+        /* width: 54%; */
+    
+    
+    }
+}
+@media screen and (width: 2216px) {
+    .face {
+        width: 586px;
+        height: 393px;
+    }
+    .team {
+        justify-content: center;
+    }
+
+.web-heading h3 {
+    font-size: 103px;
+    }
+        .items {
+            height: 17vh;
+        }
+        .face {
+            width: 33%;
+        }
+        .face .face_text h4 {
+            font-family: 'Poppins';
+            font-size: 25px;
+            text-align: center;
+        }
+        .face .face_text h6 {
+            font-size: 35px;
+            color: grey;
+        }
+}
+@media screen and (max-width: 425px) {
+    .footer-content {
+        display: flex;
+
+        padding: 20px 15px;
+        width: 100%;
+        align-items: space-around;
+        flex-direction: column;
+    }
+
+    .newsletter_searchbox input:first-child {
+
+        width: 245px;
+    }
+
+    .paragraph p {
+        color: rgb(180, 180, 180);
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    .footerpoints-1, .footerpoints-2, .footerpoints-3 {
+        margin: 10px 0;
+    }
+
+    .footerpoints-1 ul li h5, .footerpoints-2 ul li h5, .footerpoints-3 ul li h5 {
+        font-size: 26px;
+        font-weight: 900;
+    }
+
+    .footerpoints-1 ul li, .footerpoints-2 ul li, .footerpoints-3 ul li {
+        font-size: 20px;
+        color: rgb(180, 180, 180);
+    }
+
+    .imageofteam {
+        width: 384px;
+        height: 216px;
+    }
+
+    .courses_card {
+        width: 450px;
+        height: 195px;
+    }
+
+    .team_firstpart h2 {
+        font-size: 38px;
+    }
+
+    .contact2_portions {
+        flex-direction: column;
+    }
+
+    .paragraph p {
+        display: flex;
+    }
+
+    .three_portion {
+        width: 100%;
+    }
+
+    .contact2_form {
+        width: 94%;
+        margin: 15px;
+    }
+
+    .second-part ul ul {
+        padding-top: 30px;
+    }
+
+    .second-part ul ul li a {
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 4px #c3c3c3;
+        width: 76%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .first-item, .second-item, .third-item {
+        width: 83.3%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        padding: 16px 20px;
+        border-radius: 20px;
+        margin: 23px;
+        box-shadow: 2px 2px 12px rgb(17 13 13);
+        /* align-items: center; */
+    }
+
+    .section-3 {
+        margin-top: 55px;
+        padding: 0 20px;
+        text-align: center;
+        margin-bottom: 50px;
+        /* display: flex; */
+    }
+
+    .university-images {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .image {
+        margin: 10px;
+        width: 162px;
+        height: 162px;
+        /* border: 15px solid rgb(240, 240, 240); */
+        padding: 19px;
+        border-radius: 20px;
+    }
+
+    .third-heading button {
+        margin: 0 auto;
+        background-color: #223378;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        font-size: 20px;
+        border-radius: 15px;
+        font-weight: 600;
+        width: 53%;
+        margin-bottom: 10px;
+    }
+
+
+
+    .card {
+        margin: 10px;
+        width: 78%  ;
+    }
+
+    .slide {
+        height: 68vh;
+
+    }
+
+    .scroll-portion {
+        position: absolute;
+        top: 54px;
+        left: 21%;
+    }
+
+    .slide img {
+        /* height: 230px; */
+        border-radius: 0px;
+    }
+
+    .section-1 {
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 123vh;
+    }
+
+    .section--3-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .section1-image-parent {
+        width: 267px;
+        height: 229px;
+        margin: auto;
+    }
+
+    .card1 {
+        width: 86%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5px;
+        height: 120px;
+        box-shadow: 2px 2px 10px rgb(143 143 143);
+    }
+
+    .left-side {
+        display: flex;
+        justify-content: flex-start;
+        width: 102%;
+    }
+
+    .searchbar {
+        /* line-height: 4.0; */
+        margin-top: 15px;
+        display: flex;
+        margin-left: 0px;
+    }
+
+    nav {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 64px;
+        background-color: #3048aa;
+        padding: 0 8px;
+    }
+
+    .first-item {
+        width: 77.3%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 34px 20px;
+        border-radius: 20px;
+        align-items: CENTER;
+        box-shadow: 2px 2px 12px #c3c3c3;
+    }
+
+    .second-item {
+        width: 77.3%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 34px 20px;
+        border-radius: 20px;
+        align-items: CENTER;
+        box-shadow: 2px 2px 12px #c3c3c3;
+    }
+
+    .third-item {
+        width: 77.3%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 34px 20px;
+        border-radius: 20px;
+        align-items: CENTER;
+        box-shadow: 2px 2px 12px #c3c3c3;
+    }
+
+    .section-3 {
+        margin-top: -21px;
+    }
+
+    .image {
+        width: 161px;
+        height: 155px;
+    }
+
+    .card {
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 4px #c3c3c3;
+        width: 74%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card {
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 4px #c3c3c3;
+        width: 71%;
+    }
+
+    .picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-1 {
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 123vh;
+    }
+
+    .section--3-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .section1-image-parent {
+        width: 267px;
+        height: 229px;
+        margin: auto;
+    }
+
+    .card1 {
+        width: 86%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5px;
+        height: 120px;
+        box-shadow: 2px 2px 10px rgb(143 143 143);
+    }
+
+    .left-side {
+        display: flex;
+        justify-content: flex-start;
+        width: 102%;
+    }
+
+    .searchbar {
+        /* line-height: 4.0; */
+        margin-top: 15px;
+        display: flex;
+        margin-left: 0px;
+    }
+
+    nav {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 64px;
+        background-color: #3048aa;
+        padding: 0 8px;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .title-ends {
+        font-weight: 900;
+    }
+    .face_pictures {
+        width: 232px;
+        height: 237px;
+    }    
+    .face_screen {
+        width: 232px;
+        height: 213px;
+    }
+    .face_overlay {
+        height: 90%;
+    }
+    .hover_icons {
+        height: 196px;
+        width: 238px;
+    }
+    .hover_icons i {
+        font-size: 28px;
+    }
+    .face .face_text h6 {
+        font-size: 24px;
+        line-height: 0.7;
+        color: grey;
+    }
 }
